@@ -41,9 +41,10 @@
     var executeDfd = Q.defer(),
       funcs = [];
 
-    funcs.push(function(){
-      return publicTunnel(assetPort);
-    });
+    // Don't provide public tunnel for now
+    // funcs.push(function(){
+    //   return publicTunnel(assetPort);
+    // });
 
     funcs.push(function(content_url) {
       var dfd = Q.defer();
