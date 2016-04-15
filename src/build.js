@@ -37,14 +37,14 @@
           if (context.argv && context.argv.localdev) {
             config.update = 'now';
           }
-          var json = JSON.stringify(config, null, 2);
-          fs.writeFile(chcpContext.projectsConfigFilePath, json, function(err) {
-            if (err) {
-              return console.log(err);
-            }
-            console.log('Build ' + config.release + ' created in ' + chcpContext.sourceDirectory);
-            executeDfd.resolve(config);
-          });
+          // var json = JSON.stringify(config, null, 2);
+          // fs.writeFile(chcpContext.projectsConfigFilePath, json, function(err) {
+          //   if (err) {
+          //     return console.log(err);
+          //   }
+          //   console.log('Build ' + config.release + ' created in ' + chcpContext.sourceDirectory);
+          //   executeDfd.resolve(config);
+          // });
         });
       });
     });
