@@ -37,9 +37,8 @@
           if (context.argv && context.argv.localdev) {
             config.update = 'now';
           }
-          config.content_url = 'http://192.168.179.80:31284';
           var json = JSON.stringify(config, null, 2);
-          fs.writeFile(chcpContext.projectsConfigFilePath, json, function (err) {
+          fs.writeFile(chcpContext.projectsConfigFilePath, json, function(err) {
             if (err) {
               return console.log(err);
             }
